@@ -21,7 +21,8 @@ let allWagesFor = function () {
     return payable
 }
 
-const createEmployeeRecord = function(person) {
+const createEmployeeRecord = function() {
+  let this = person;
   return {
     firstName: person[0],
     familyName: person[1],
